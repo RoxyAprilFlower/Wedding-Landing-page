@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding in Prague</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+      integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      max-width: 90%;
+    }
+    h1 {
+      text-align: center;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      font-family: "Cormorant Garamond";
+      letter-spacing: 0.5em;
+      text-align: center;
+      font-style: unset;
+      text-transform: uppercase;
+      font-weight: 50;
+    }
+
+    h2 {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      font-family: "Cormorant Garamond";
+      letter-spacing: 0.5em;
+      text-align: center;
+      font-style: unset;
+      text-transform: uppercase;
+      font-weight: 50;
+      font-size: 70px;
+      margin: 0px;
+    }
+    h3 {
+      text-align: center;
+      color: #291e41;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      letter-spacing: 0.5em;
+      font-weight: 5;
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 0px 50px;
+      margin: 20px 60px 20px 60px;
+    }
+    P {
+      text-align: center;
+      font-size: 14px;
+      line-height: 2;
+      font-family: "Raleway";
+      font-style: normal;
+      margin: 10px 50px;
+      text-align: justify;
+    }
+    .button {
+      display: block;
+      margin: 20px auto;
+      background: #866ec7;
+      color: white;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      font-family: "Cormorant Garamond";
+    }
+    .button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+    .container {
+      max-width: 900px;
+      padding: 60px;
+    }
+
+    .general {
+      display: block;
+      text-align: center;
+      border-radius: 4px;
+      background-color: #f7f4fc;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 100px 0;
+      border-radius: 10px;
+    }
+    .middle {
+      text-align: center;
+      display: block;
+      background-color: #866ec7;
+      max-width: 90%;
+      padding: 100px 0px;
+      margin: 0px auto;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    .wrap {
+      display: block;
+      margin: 20px auto;
+      padding: 0 auto;
+    }
+    .getlist {
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+    .getlist:hover {
+      text-decoration: underline;
+    }
+
+    .text__block {
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    body .owl-carousel .owl-nav button.owl-next {
+      right: 2%;
+    }
+    body .owl-carousel .owl-nav button.owl-prev {
+      left: 2%;
+    }
+    body .owl-carousel .owl-nav button.owl-next,
+    body .owl-carousel .owl-nav button.owl-prev {
+      position: absolute;
+      top: 40%;
+      background-color: #866ec7;
+      opacity: 0.5;
+      display: block;
+      width: 50px;
+      height: 100px;
+      color: #fff;
+      font-size: 25px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+    body .owl-carousel .owl-nav button.owl-next:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    .slider {
+      position: relative;
+    }
+  </style>
+  <body>
+    <div class="comtainer">
+      <header class="header">
+        <nav>
+          <div class="wrap">
+            <a href=" / ">
+              <img
+                src="https://romanticdays.eu/wp-content/uploads/2021/11/recomend-e1637694660958.jpg"
+                width="180"
+              />
+            </a>
+            <h1>WEDDING & ROMANTIC EVENTS IN PRAGUE</h1>
+          </div>
+        </nav>
+      </header>
+      <img
+        src="https://romanticdays.eu/wp-content/uploads/2021/11/tatyana_khotlubiei_Photo-299-scaled-e1637615775531.jpg"
+        alt="Wedding photo"
+      />
+      <div class="general">
+        <h2>ROMANTIC DAYS</h2>
+        <h3>Let's write you story together !</h3>
+        <div class="text__block">
+          <p>
+            Wedding, romantic date or picnic, original proposal, or baby shower
+            . All special moments of couples’ life! Romantic Days and me,
+            Roksolana – wedding and event planner, will create an unforgettable
+            celebration for you in Czech Republic. For us, your celebration, no
+            matter if it is a wedding or a magical walk through Prague not just
+            a job but an inspiration, a passion, a craft.We help two loving
+            hearts to be close to one another and creating a unique and
+            unforgettable romantic experience!
+          </p>
+        </div>
+        <div class="text__block">
+          <p>
+            Behind the romantic and magical moments, perfect wedding or other
+            important evets is alwaysa a complex of proper planning,
+            professional arranging and precise coordination in the day of
+            celebration. We will take care of all steps of planning your dream
+            wedding or other Romantic events in Prague and Czech castles!
+            ROMANTIC DAYS – is a team of professionals in the event industry who
+            are passionate about their job.
+          </p>
+        </div>
+        <button class="button getInfo">GET MORE INFO</button>
+      </div>
+      <div class="slider">
+        <div class="owl-carousel">
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/DSC-295_2-e1637616169287.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/tatyana_khotlubiei_Photo-383-scaled-e1637701355342.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/DSC-109-e1637701285589.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/4L0A3878-1-scaled-e1637701318759.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/tatyana_khotlubiei_Photo-337-scaled-e1637701422879.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/tatyana_khotlubiei_Photo-380-scaled-e1637701394912.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/tatyana_khotlubiei_Photo-425-scaled-e1637703115732.jpg"
+            alt="Wedding Prague"
+          />
+          <img
+            src="https://romanticdays.eu/wp-content/uploads/2021/11/4L0A4041-scaled-e1637703285102.jpg"
+            alt="Wedding Prague"
+          />
+        </div>
+      </div>
+      <div class="middle">
+        <button class="button getFree">
+          GET LIST OF WEDDING VENUES FOR FREE
+        </button>
+        <br />
+        <a href="https://romanticdays.eu/en/" target="_blank" class="getlist">
+          learn more about ROMANTIC DAYS
+        </a>
+      </div>
+    </div>
+    <script>
+      function get() {
+        let name = prompt("Whar is ypur name?");
+        let email = prompt("Whar is ypur email address ?");
+        alert(`Thank you ${name}! We'll be in touch by email`);
+      }
+      let getFreebutton = document.querySelector(".getFree");
+      getFreebutton.addEventListener("click", get);
+
+      function goTo() {
+        window.open("https://romanticdays.eu/en/");
+      }
+      let getInfobutton = document.querySelector(".getInfo");
+      getInfobutton.addEventListener("click", goTo);
+
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
